@@ -1,4 +1,3 @@
-import React from 'react';
 import './CenterContainer.css';
 
 const CenteredContainer = ({ title, subtitle, children, footer }) => {
