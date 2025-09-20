@@ -1,5 +1,3 @@
-import './CenterContainer.css';
-
 const CenteredContainer = ({ title, subtitle, children, footer }) => {
   return (
     <div className="login-container">
