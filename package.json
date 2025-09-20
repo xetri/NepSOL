@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "install-deps": "npm install; cd frontend && npm install",
+    "setup": "bun run ./setup.ts",
+    "start": "bun run .",
+    "build": "rm -rf dist && cd frontend && npm run build && mv dist ../",
+    "dev": "bun run --watch src/ ."
+  },
+  "devDependencies": {
+    "bun": "^1.2.22",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.5.0",
+    "hono": "^4.9.7"
+  }
+}

@@ -1,0 +1,144 @@
+nav {
+  width: 100%;
+  background: rgba(20, 20, 20, 0.6); /* glassy dark */
+  backdrop-filter: blur(12px);
+  color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Left side: logo and brand */
+.logosection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 28px;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #14f195, #9945ff, #19fb9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Right side container */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 260px;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    display: none;
+  }
+}
+
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #eee;
+  flex: 1;
+  font-size: 14px;
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+.search-icon {
+  font-size: 16px;
+  color: #14f195;
+  margin-left: 8px;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ddd;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav ul li:hover {
+  background: linear-gradient(90deg, rgba(20, 241, 149, 0.15), rgba(153, 69, 255, 0.15));
+  color: #14f195;
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Sign In (outline style) */
+.signin-btn {
+  padding: 6px 12px;
+  border: 1px solid #14f195;
+  background: transparent;
+  color: #14f195;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.signin-btn:hover {
+  background: #14f195;
+  color: #121212;
+}
+
+/* Get Started (gradient style) */
+.getstarted-btn {
+  padding: 6px 14px;
+  background: #19fb9b;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.getstarted-btn:hover {
+  transform: scale(1.05);
+}
+
