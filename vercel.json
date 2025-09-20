@@ -3,7 +3,6 @@
   "builds": [
     {
       "src": "src/index.ts",
-      "use": "@vercel/bun",
       "config": {
         "installCommand": "bun run install-deps",
         "buildCommand": "bun run setup && bun run build"
